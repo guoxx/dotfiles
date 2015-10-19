@@ -1,0 +1,7 @@
+# visual studio related files
+*.sdf
+*.opensdf
+*.user
+
+# visual studio related folders
+.vs

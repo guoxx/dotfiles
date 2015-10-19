@@ -1,0 +1,26 @@
+[user]
+	email = guoxx@me.com
+	name = guoxiaoxin
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+[diff]
+	tool = bc
+[difftool "bc"]
+	cmd = \"C:/Program Files/Beyond Compare 4/Bcomp.exe\" \"$(cygpath -w $LOCAL)\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[merge]
+	tool = bc
+[mergetool "bc"]
+	trustExitCode = true
+	cmd = \"C:/Program Files/Beyond Compare 4/Bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+[mergetool]
+	prompt = false
+[core]
+	excludesfile = /cygdrive/c/Users/ben/.gitignore_global
