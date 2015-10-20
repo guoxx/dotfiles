@@ -24,3 +24,5 @@
 	prompt = false
 [core]
 	excludesfile = /cygdrive/c/Users/ben/.gitignore_global
+[push]
+	default = simple
