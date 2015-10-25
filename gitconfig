@@ -23,6 +23,7 @@
 [mergetool]
 	prompt = false
 [core]
-	excludesfile = /cygdrive/c/Users/ben/.gitignore_global
+    excludesfile = ~/.gitignore_global
+    filemode = false
 [push]
 	default = simple
