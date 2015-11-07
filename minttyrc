@@ -21,6 +21,6 @@ BoldAsFont=no
 Transparency=low
 CursorType=block
 Font=Consolas
-FontHeight=10
+FontHeight=11
 CtrlShiftShortcuts=yes
 FontSmoothing=full
