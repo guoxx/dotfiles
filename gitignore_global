@@ -2,6 +2,7 @@
 *.sdf
 *.opensdf
 *.user
+*.v12.suo
 
 # visual studio related folders
 .vs
