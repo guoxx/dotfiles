@@ -94,7 +94,7 @@ alias wk="cd /cygdrive/d/Workspace"
 alias dox='ssh ben@107.170.234.74'
 alias rpi='ssh pi@10.0.0.14'
 
-alias locate='everything --search'
+alias locate='/cygdrive/C/bin/Wox-1.2.0-beta/Plugins/Wox.Plugin.Everything/PortableEverything/everything --search'
 
 alias git-rm-all='git ls-files --deleted | xargs git rm'
 alias git-add-all='git add -u .'
