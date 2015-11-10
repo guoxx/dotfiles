@@ -1,0 +1,60 @@
+{
+	"auto_complete_commit_on_tab": false,
+	"auto_complete_delay": 0,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": ".",
+			"selector": "source.unrealscript"
+		}
+	],
+	"auto_complete_with_fields": true,
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+	"default_line_ending": "unix",
+	"detect_indentation": true,
+	"file_exclude_patterns":
+	[
+		"*.idb",
+		"*.pdb",
+		"*.obj",
+		"*.suo",
+		"*.orig",
+		"*.exe",
+		"*.jar",
+		"*.so",
+		"*.dll",
+		"*.lib",
+		"*.dylib",
+		"*.pyc",
+		"*.sb",
+		"*.sdb",
+		".*"
+	],
+	"folder_exclude_patterns":
+	[
+		"%*%",
+		".hg",
+		".*",
+		"Temp",
+		"apprsrc"
+	],
+	"font_face": "Consolas",
+	"font_size": 11.5,
+	"highlight_line": true,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"remember_open_files": false,
+	"rulers":
+	[
+		80
+	],
+	"tab_size": 4,
+	"theme": "Spacegray.sublime-theme",
+	"translate_tabs_to_spaces": false,
+	"word_wrap": true
+}
