@@ -86,6 +86,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export EDITOR='vim'
+
 alias e="explorer"
 alias open="cygstart"
 alias dl="cd /cygdrive/d/Downloads"
