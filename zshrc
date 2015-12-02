@@ -93,7 +93,8 @@ alias open="cygstart"
 alias dl="cd /cygdrive/d/Downloads"
 alias wk="cd /cygdrive/d/Workspace"
 
-alias dox='ssh ben@107.170.234.74'
+# alias dox='ssh ben@107.170.234.74'
+alias dox='ssh ben@128.199.133.186'
 alias rpi='ssh pi@10.0.0.14'
 
 alias locate='/cygdrive/C/bin/Wox-1.2.0-beta/Plugins/Wox.Plugin.Everything/PortableEverything/everything --search'
