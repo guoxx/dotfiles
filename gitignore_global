@@ -4,5 +4,8 @@
 *.user
 *.v12.suo
 
+# vim swp file
+*.swp
+
 # visual studio related folders
 .vs
