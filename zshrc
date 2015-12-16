@@ -49,7 +49,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git virtualenv)
 
 # User configuration
 
@@ -87,11 +87,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export EDITOR='vim'
+export WORKSPACE='/cygdrive/d/Workspace'
 
 alias e="explorer"
 alias open="cygstart"
 alias dl="cd /cygdrive/d/Downloads"
-alias wk="cd /cygdrive/d/Workspace"
+alias wk="cd $WORKSPACE"
 
 # alias dox='ssh ben@107.170.234.74'
 alias dox='ssh ben@128.199.133.186'
@@ -116,3 +117,18 @@ function cowsay_fortune(){
     fortune | cowsay -f $randomcowfile
 }
 cowsay_fortune
+
+# pip should only run if there is a virtualenv currently activated
+export PIP_REQUIRE_VIRTUALENV=true
+# cache pip-installed packages to avoid re-downloading
+# export PIP_DOWNLOAD_CACHE=/cygdrive/d/Cache/pip
+export XDG_CACHE_HOME=/cygdrive/d/Cache
+# virtualenvs setup
+export WORKON_HOME="$WORKSPACE/virtualenvs"
+if [ -f /bin/virtualenvwrapper.sh ]; then
+    source /bin/virtualenvwrapper.sh
+fi
+
+syspip(){
+    PIP_REQUIRE_VIRTUALENV="" pip "$@"
+}
