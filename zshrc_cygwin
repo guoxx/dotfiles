@@ -1,0 +1,20 @@
+export PATH=$PATH:"/cygdrive/c/Program Files/Sublime Text 3"
+export PATH=$PATH:"/cygdrive/c/Program Files/Beyond Compare 4"
+
+export WORKSPACE_HOME='/cygdrive/d/Workspace'
+export CACHE_HOME='/cygdrive/d/Cache'
+
+alias e="explorer"
+alias open="cygstart"
+alias dl="cd /cygdrive/d/Downloads"
+alias wk="cd $WORKSPACE_HOME"
+
+alias locate='/cygdrive/C/bin/Wox-1.2.0-beta/Plugins/Wox.Plugin.Everything/PortableEverything/everything --search'
+
+function subl2(){
+    subl $(cygpath -w $1) "${@:2}"
+}
+
+if [ -f /bin/virtualenvwrapper.sh ]; then
+    source /bin/virtualenvwrapper.sh
+fi
