@@ -3,6 +3,7 @@
 *.opensdf
 *.user
 *.v12.suo
+*.opendb
 
 # vim swp file
 *.swp
