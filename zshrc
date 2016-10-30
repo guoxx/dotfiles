@@ -53,7 +53,7 @@ plugins=(git virtualenv)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:"/cygdrive/c/Program Files/Sublime Text 3"
 export PATH=$PATH:"/cygdrive/c/Program Files/Beyond Compare 4"
 export PATH=.:$PATH
