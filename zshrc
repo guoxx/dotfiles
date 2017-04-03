@@ -49,7 +49,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git virtualenv)
+plugins=(virtualenv)
 
 # User configuration
 
@@ -94,18 +94,13 @@ alias open="cygstart"
 alias dl="cd /cygdrive/d/Downloads"
 alias wk="cd $WORKSPACE"
 
-# alias dox='ssh ben@107.170.234.74'
 alias dox='ssh ben@128.199.133.186'
 alias rpi='ssh pi@10.0.0.14'
 
 alias locate='everything --search'
 
-alias git-rm-all='git ls-files --deleted | xargs git rm'
-alias git-add-all='git add -u .'
-alias git-add-new='git add -A'
-
-function subl2(){
-    subl $(cygpath -w $1) "${@:2}"
+function vscode2(){
+    code $(cygpath -w $1) "${@:2}"
 }
 
 function cowsay_fortune(){
